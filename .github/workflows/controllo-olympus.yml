@@ -1,0 +1,58 @@
+name: Controllo quotidiano Olympus
+
+on:
+  schedule:
+    - cron: "30 5 * * *"   # ogni giorno alle 5:30 UTC (7:30 in Italia d'estate)
+  workflow_dispatch: {}     # consente anche l'avvio manuale dal sito GitHub
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  controllo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scarico il repository
+        uses: actions/checkout@v4
+
+      - name: Preparo Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Eseguo il controllo su Olympus
+        run: python scripts/controlla_olympus.py
+
+      - name: Eseguo la rassegna web (news, eventi, interviste, libri)
+        run: python scripts/controlla_contenuti.py
+
+      - name: Salvo le modifiche a dati.json (se presenti)
+        run: |
+          if [[ -n "$(git status --porcelain dati.json)" ]]; then
+            git config user.name "osservatorio-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git add dati.json
+            git commit -m "Aggiornamento automatico ($(date +%d/%m/%Y))"
+            git push
+          else
+            echo "Nessuna modifica da salvare."
+          fi
+
+      - name: Apro una issue di notifica (se ci sono novità sui recepimenti)
+        if: ${{ hashFiles('novita.txt') != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "Nuovo possibile recepimento rilevato ($(date +%d/%m/%Y))" \
+            --body-file novita.txt
+
+      - name: Apro una issue di notifica (se ci sono nuovi contenuti)
+        if: ${{ hashFiles('novita_contenuti.txt') != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "Nuovi contenuti per la rassegna da approvare ($(date +%d/%m/%Y))" \
+            --body-file novita_contenuti.txt
