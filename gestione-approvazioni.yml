@@ -1,0 +1,61 @@
+name: Gestione approvazioni
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  applica:
+    if: startsWith(github.event.issue.title, 'APPROVA:') || startsWith(github.event.issue.title, 'RIFIUTA:') || startsWith(github.event.issue.title, 'APPROVA-ITEM:') || startsWith(github.event.issue.title, 'RIFIUTA-ITEM:')
+    runs-on: ubuntu-latest
+    env:
+      TITOLO: ${{ github.event.issue.title }}
+      NUMERO: ${{ github.event.issue.number }}
+      AUTORE: ${{ github.event.issue.user.login }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Verifico che a decidere sia il gestore del sito
+        run: |
+          PERM=$(gh api "repos/${{ github.repository }}/collaborators/${AUTORE}/permission" -q .permission || echo "none")
+          echo "Permesso di ${AUTORE}: ${PERM}"
+          if [[ "$PERM" != "admin" && "$PERM" != "write" && "$PERM" != "maintain" ]]; then
+            gh issue close "$NUMERO" -R "${{ github.repository }}" \
+              -c "Solo il gestore del sito può approvare o rifiutare le segnalazioni. Nessuna modifica applicata."
+            echo "Autore non autorizzato: mi fermo." && exit 0
+          fi
+          echo "AUTORIZZATO=si" >> "$GITHUB_ENV"
+
+      - name: Scarico il repository
+        if: env.AUTORIZZATO == 'si'
+        uses: actions/checkout@v4
+
+      - name: Preparo Python
+        if: env.AUTORIZZATO == 'si'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Applico la decisione a dati.json
+        if: env.AUTORIZZATO == 'si'
+        run: python scripts/applica_decisione.py "$TITOLO"
+
+      - name: Salvo e pubblico la modifica
+        if: env.AUTORIZZATO == 'si'
+        run: |
+          if [[ -n "$(git status --porcelain dati.json)" ]]; then
+            git config user.name "osservatorio-bot"
+            git config user.email "osservatorio-bot@users.noreply.github.com"
+            git add dati.json
+            git commit -m "Decisione applicata: $TITOLO"
+            git push
+          fi
+
+      - name: Chiudo la pratica con conferma
+        if: env.AUTORIZZATO == 'si'
+        run: |
+          gh issue close "$NUMERO" -R "${{ github.repository }}" \
+            -c "✔ Fatto: decisione applicata e sito in aggiornamento (online entro un paio di minuti)."
