@@ -71,7 +71,7 @@ function erroreDati(){
 const PAGINE = [
   ["index.html","Home"],["accordo.html","L'Accordo"],["news.html","News"],
   ["eventi.html","Eventi"],["interviste.html","Interviste"],
-  ["libri.html","Libri"],["storia.html","Storia"]
+  ["libri.html","Libri"],["storico Accordi.html","Storico Accordi"]
 ];
 
 function scheletro(attiva, titolo, sottotitolo){
