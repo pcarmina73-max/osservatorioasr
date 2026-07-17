@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "aggiornato": "17/07/2026",
+    "ultimo_controllo": ""
+  },
+  "regioni": [
+    {
+      "nome": "Abruzzo",
+      "area": "Sud",
+      "stato": "da_verificare",
+      "atto": "",
+      "data": "",
+      "nota": "",
+      "link": "",
+      "verificato": true
+    },
+    {
+      "nome": "Basilicata",
+      "area": "Sud",
+      "stato": "recepito",
+      "atto": "DGR n. 332",
+      "data": "10/06/2026",
+      "nota": "Recepimento dell'Accordo tra Governo, Regioni e Province autonome, richiamando la L.R. 30/2015 e le DGR 167/2011, 845/2017 e 541/2023 in materia di formazione sicurezza (fonte: Olympus - Univ. Urbino; oggetto da confermare sul testo integrale).",
+      "link": "https://olympus.uniurb.it/index.php?option=com_content&view=article&id=37019:regione-basilicata,-dgr-10-giugno-2026,-n-332-l-r-n-30-2015-d-g-r-n-167-2011-e-ss-mm-ii-d-g-r-n-845-2017-e-ss-mm-ii-d-g-r-n-541-2023-recepimento-accordo-tra-il-governo,-le-regioni-e-le-province-autonome-di-trento-e-di-bolzano&catid=27&Itemid=137",
+      "verificato": true
+    },
+    {
+      "nome": "Calabria",
+      "area": "Sud",
+      "stato": "recepito",
+      "atto": "DGR n. 393",
+      "data": "07/07/2026",
+      "nota": "Recepimento dell'Accordo Stato-Regioni-Province autonome n. 59 del 17 aprile 2025 (fonte: Olympus - Univ. Urbino).",
+      "link": "",
+      "verificato": true
+    },
+    {
+      "nome": "Campania",
+      "area": "Sud",
+      "stato": "da_verificare",
+      "atto": "",
+      "data": "",
+      "nota": "",
+      "link": "",
+      "verificato": true
+    },
+    {
+      "nome": "Emilia-Romagna",
+      "area": "Nord",
+      "stato": "recepito",
+      "atto": "DGR n. 1085",
+      "data": "07/07/2025",
+      "nota": "Disposizioni attuative per la formazione (BURERT n. 203 del 30/07/2025), con disposizioni transitorie per le attività avviate secondo le regole previgenti. Cessano di efficacia le DGR 816/2012, 168/2013 e 35/2017.",
+      "link": "https://olympus.uniurb.it/index.php?option=com_content&view=article&id=34951:regione-emilia-romagna,-dgr-7-luglio-2025,-n-1085-accordo-stato-regioni-e-province-autonome-trento-e-bolzano-17-aprile-2025-relativo-a-percorsi-formativi-per-salute-e-sicurezza-sul-lavoro-art-37-c-2-dlgs-81-08-smi-disposizioni-attuative-formazione&catid=27&Itemid=137",
+      "verificato": true
+    },
+    {
+      "nome": "Friuli-Venezia Giulia",
+      "area": "Nord",
+      "stato": "in_corso",
+      "atto": "DDL Multisettoriale (in discussione)",
+      "data": "20/05/2026",
+      "nota": "Il disegno di legge Multisettoriale, illustrato in Consiglio regionale il 20/05/2026, introduce una disciplina di accreditamento per i soggetti formatori in materia di salute e sicurezza, in attuazione dell'Accordo Stato-Regioni di aprile 2025. Non risulta ancora un atto formale di recepimento.",
+      "link": "https://www.regione.fvg.it/rafvg/giunta/dettaglio.act?dir=/rafvg/cms/RAFVG/Giunta/Rosolen/comunicati/&id=147483&ass=C06",
+      "verificato": true
+    },
+    {
+      "nome": "Lazio",
+      "area": "Centro",
+      "stato": "da_verificare",
+      "atto": "",
+      "data": "",
+      "nota": "",
+      "link": "",
+      "verificato": true
+    },
+    {
+      "nome": "Liguria",
+      "area": "Nord",
+      "stato": "da_verificare",
+      "atto": "",
+      "data": "",
+      "nota": "",
+      "link": "",
+      "verificato": true
+    },
+    {
+      "nome": "Lombardia",
+      "area": "Nord",
+      "stato": "recepito",
+      "atto": "DGR n. XII/4515",
+      "data": "09/06/2025",
+      "nota": "Recepisce l'Accordo e approva gli 'Indirizzi ai soggetti formatori in tema di salute e sicurezza sul lavoro operanti in Lombardia' (Allegato B). Preceduta dalla DGR XII/4499 del 03/06/2025.",
+      "link": "",
+      "verificato": true
+    },
+    {
+      "nome": "Marche",
+      "area": "Centro",
+      "stato": "da_verificare",
+      "atto": "",
+      "data": "",
+      "nota": "",
+      "link": "",
+      "verificato": true
+    },
+    {
+      "nome": "Molise",
+      "area": "Sud",
+      "stato": "recepito",
+      "atto": "DGR n. 170",
+      "data": "12/06/2026",
+      "nota": "Provvedimenti attuativi dell'Accordo Stato-Regioni del 17/04/2025 sui percorsi formativi in materia di salute e sicurezza sul lavoro ex D.Lgs. 81/2008 (fonte: Olympus - Univ. Urbino).",
+      "link": "",
+      "verificato": true
+    },
+    {
+      "nome": "Piemonte",
+      "area": "Nord",
+      "stato": "recepito",
+      "atto": "DGR n. 10-1413",
+      "data": "23/07/2025",
+      "nota": "Recepisce l'Accordo 59/CSR, revoca la DGR 17-4345/2016 e riordina i provvedimenti regionali. Conferma la Commissione per la verifica dei soggetti formatori e definisce le indicazioni operative.",
+      "link": "https://olympus.uniurb.it/index.php?option=com_content&view=article&id=36870:regione-piemonte,-dgr-23-luglio-2025,-n-10-1413-decreto-legislativo-9-aprile-2008,-n-81-presa-d’atto-e-recepimento-dell’accordo-tra-il-governo,-le-regioni-e-le-province-autonome-di-trento-e-di-bolzano,-rep-atti-n-59-csr-del-17-aprile-2025&catid=27&Itemid=137",
+      "verificato": true
+    },
+    {
+      "nome": "Puglia",
+      "area": "Sud",
+      "stato": "recepito",
+      "atto": "DGR n. 2022",
+      "data": "30/12/2025",
+      "nota": "Recepimento dell'Accordo Stato-Regioni-Province autonome n. 59 del 17/04/2025 e istituzione di un gruppo di lavoro (fonte: Olympus - Univ. Urbino).",
+      "link": "https://olympus.uniurb.it/index.php?option=com_content&view=article&id=36079:regione-puglia,-dgr-30-dicembre-2025,-n-2022-accordo-stato-regioni-province-autonome-17-aprile-2025,-n-59-per-l-individuazione-di-durata-e-contenuti-dei-percorsi-formativi-in-materia-di-salute-e-sicurezza-recepimento-istituzione-gruppo-di-lavoro&catid=27&Itemid=137",
+      "verificato": true
+    },
+    {
+      "nome": "Sardegna",
+      "area": "Isole",
+      "stato": "da_verificare",
+      "atto": "",
+      "data": "",
+      "nota": "",
+      "link": "",
+      "verificato": true
+    },
+    {
+      "nome": "Sicilia",
+      "area": "Isole",
+      "stato": "recepito",
+      "atto": "D.A. n. 368",
+      "data": "20/03/2026",
+      "nota": "Decreto dell'Assessorato della Salute (GURS n. 15 del 27/03/2026): recepisce l'Accordo 59/CSR e approva le Linee guida regionali sulle modalità di svolgimento dei corsi di formazione.",
+      "link": "",
+      "verificato": true
+    },
+    {
+      "nome": "Toscana",
+      "area": "Centro",
+      "stato": "recepito",
+      "atto": "DGR n. 572",
+      "data": "11/05/2026",
+      "nota": "Recepimento dell'Accordo ex art. 37, c. 2, D.Lgs. 81/2008 tra Governo, Regioni e Province autonome (Accordo 59/CSR del 17/04/2025) (fonte: Olympus - Univ. Urbino).",
+      "link": "https://olympus.uniurb.it/index.php?option=com_content&view=article&id=36709:regione-toscana,-dgr-11-maggio-2026,-n-572-accordo-ai-sensi-dell’articolo-37,-comma-2,-del-decreto-legislativo-9-aprile-2008,-n-81,-tra-il-governo,-le-regioni-e-le-province-autonome-di-trento-e-di-bolzano&catid=27&Itemid=137",
+      "verificato": true
+    },
+    {
+      "nome": "Umbria",
+      "area": "Centro",
+      "stato": "recepito",
+      "atto": "DGR n. 1360",
+      "data": "30/12/2025",
+      "nota": "Recepimento dell'Accordo tra lo Stato, le Regioni e le Province autonome di Trento e Bolzano n. 59 del 17/04/2025 (fonte: Olympus - Univ. Urbino).",
+      "link": "https://olympus.uniurb.it/index.php?option=com_content&view=article&id=36133:regione-umbria,-dgr-30-dicembre-2025,-n-1360-recepimento-accordo-tra-lo-stato,-le-regioni-e-le-province-autonome-di-trento-e-bolzano,-n-59-del-17-aprile-2025&catid=27&Itemid=137",
+      "verificato": true
+    },
+    {
+      "nome": "Valle d'Aosta",
+      "area": "Nord",
+      "stato": "da_verificare",
+      "atto": "",
+      "data": "",
+      "nota": "",
+      "link": "",
+      "verificato": true
+    },
+    {
+      "nome": "Veneto",
+      "area": "Nord",
+      "stato": "recepito",
+      "atto": "DGR n. 377",
+      "data": "19/05/2026",
+      "nota": "Recepimento dell'Accordo sancito in Conferenza permanente Stato-Regioni-Province autonome, Rep. Atti n. 59/CSR del 17/04/2025 (fonte: Olympus - Univ. Urbino).",
+      "link": "https://olympus.uniurb.it/index.php?option=com_content&view=article&id=36773:regione-veneto,-dgr-19-maggio-2026,-n-377-recepimento-dell-accordo-sancito-in-sede-di-conferenza-permanente-per-i-rapporti-tra-lo-stato,-le-regioni-e-le-province-autonome-di-trento-e-di-bolzano-rep-atti-n-59-csr-del-17-aprile-2025&catid=27&Itemid=137",
+      "verificato": true
+    },
+    {
+      "nome": "P.A. Trento",
+      "area": "Nord",
+      "stato": "da_verificare",
+      "atto": "",
+      "data": "",
+      "nota": "",
+      "link": "",
+      "verificato": true
+    },
+    {
+      "nome": "P.A. Bolzano",
+      "area": "Nord",
+      "stato": "recepito",
+      "atto": "DGP n. 754",
+      "data": "23/09/2025",
+      "nota": "Disposizioni in materia di accreditamento FSE+ e di formazione in ambito salute e sicurezza del lavoro (fonte: Olympus - Univ. Urbino). Il titolo non cita espressamente l'Accordo 59/CSR: oggetto da confermare sul testo integrale.",
+      "link": "https://olympus.uniurb.it/index.php?option=com_content&view=article&id=35407:provincia-autonoma-di-bolzano-alto-adige-dgp-23-settembre-2025,-n-754-disposizioni-in-materia-di-accreditamento-fse-nonch%C3%A9-in-materia-di-formazione-in-ambito-salute-e-sicurezza-del-lavoro-della-provincia-autonoma-di-bolzano&catid=27&Itemid=137",
+      "verificato": true
+    }
+  ],
+  "changelog": [
+    {
+      "d": "17/07/2026",
+      "t": "Basilicata: aggiunto il collegamento alla scheda Olympus della DGR 332 del 10/06/2026."
+    },
+    {
+      "d": "17/07/2026",
+      "t": "Aggiunto il recepimento della P.A. Bolzano: DGP n. 754 del 23/09/2025 (oggetto da confermare sul testo integrale)."
+    },
+    {
+      "d": "17/07/2026",
+      "t": "Aggiunte: mappa del recepimento, grafico dell'andamento, sezione 'Cosa prevede l'Accordo', FAQ, modulo segnalazioni e collegamenti agli atti."
+    },
+    {
+      "d": "17/07/2026",
+      "t": "Prima versione dell'osservatorio: censiti 11 recepimenti (Piemonte, Lombardia, Emilia-Romagna, Puglia, Umbria, Sicilia, Toscana, Veneto, Basilicata, Molise, Calabria) e l'adeguamento in corso del Friuli-Venezia Giulia."
+    }
+  ],
+  "contenuti": []
+}

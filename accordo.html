@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'Accordo Stato-Regioni 59/CSR — cosa prevede | OsservatorioASR.it</title>
+<meta name="description" content="Le novità dell'Accordo Stato-Regioni 17 aprile 2025 sulla formazione sicurezza: datore di lavoro, preposti, e-learning, soggetti formatori, regime transitorio e FAQ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <section id="accordo" class="accordo-sec" aria-label="Cosa prevede l'Accordo">
+    <div class="wrap">
+        <div class="cards">
+        <div class="card"><h3>Un testo unico della formazione</h3><p>L'Accordo accorpa e sostituisce i precedenti Accordi del 2011 (lavoratori e datori di lavoro/RSPP), del 2012 (attrezzature di lavoro) e del 2016 (RSPP/ASPP), riunendo in un solo testo durata e contenuti minimi dei percorsi formativi ex art. 37 D.Lgs. 81/2008.</p></div>
+        <div class="card"><h3>Formazione del datore di lavoro</h3><p>Introdotto per la prima volta un corso obbligatorio di 16 ore per il datore di lavoro, con obblighi da assolvere nei termini previsti dall'Accordo per chi è già in attività.</p></div>
+        <div class="card"><h3>Preposto rafforzato</h3><p>Percorso dedicato per il preposto con aggiornamento a periodicità biennale, in coerenza con le modifiche introdotte dalla L. 215/2021 al D.Lgs. 81/2008.</p></div>
+        <div class="card"><h3>Modalità di erogazione</h3><p>Regole esplicite su formazione in presenza, videoconferenza sincrona ed e-learning, con l'indicazione dei percorsi e delle parti (come le prove pratiche) che richiedono la presenza.</p></div>
+        <div class="card"><h3>Soggetti formatori e docenti</h3><p>Definiti i soggetti legittimati a erogare la formazione — inclusi gli enti accreditati dalle Regioni — e i requisiti dei docenti, con obblighi di tracciabilità di registri e verbali.</p></div>
+        <div class="card"><h3>Regime transitorio e crediti</h3><p>Dodici mesi di transizione (fino al 24/05/2026) per adeguare i percorsi. La formazione già svolta in conformità ai previgenti Accordi resta valida come credito formativo, con aggiornamenti alle nuove scadenze.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="timeline">
+    <h2>Le tappe dell'Accordo</h2>
+    <div class="tappe">
+      <div class="tappa"><span class="data">17/04/2025</span><p>Sancito in Conferenza Stato-Regioni l'Accordo unico sulla formazione (Rep. Atti n. 59/CSR), che accorpa e sostituisce gli Accordi 2011, 2012 e 2016.</p></div>
+      <div class="tappa"><span class="data">24/05/2025</span><p>Pubblicazione in Gazzetta Ufficiale (Serie Generale n. 119) ed entrata in vigore. Decorre il periodo transitorio di 12 mesi.</p></div>
+      <div class="tappa"><span class="data">24/05/2026</span><p>Termine del periodo transitorio: i percorsi formativi devono essere adeguati alle nuove disposizioni.</p></div>
+    </div>
+  </section>
+  <section id="faq" class="faq-sec" aria-label="Domande frequenti">
+    <h2 class="titolo">Domande frequenti</h2>
+    <details>
+      <summary>La mia regione non ha recepito: quali regole si applicano?</summary>
+      <p>L'Accordo è efficace su tutto il territorio nazionale dalla pubblicazione in Gazzetta Ufficiale (24/05/2025). Il recepimento regionale serve ad adeguare l'ordinamento regionale — accreditamenti, indirizzi ai soggetti formatori, riordino delle delibere previgenti — non ad "attivare" l'Accordo, che si applica comunque.</p>
+    </details>
+    <details>
+      <summary>I corsi frequentati prima del nuovo Accordo restano validi?</summary>
+      <p>In generale sì: la formazione erogata in conformità ai previgenti Accordi è riconosciuta come credito formativo. Gli aggiornamenti successivi seguono le nuove durate e periodicità. Per i casi particolari conviene verificare le disposizioni transitorie dell'Accordo e degli eventuali atti regionali.</p>
+    </details>
+    <details>
+      <summary>Cosa è cambiato con la fine del periodo transitorio?</summary>
+      <p>Dal 24 maggio 2026 i percorsi formativi devono essere conformi al nuovo Accordo. Il periodo di 12 mesi dall'entrata in vigore è servito a completare i corsi impostati secondo le regole precedenti e ad adeguare progettazione e docenze.</p>
+    </details>
+    <details>
+      <summary>Chi può erogare la formazione?</summary>
+      <p>I soggetti formatori individuati dall'Accordo, tra cui gli enti accreditati dalle Regioni e Province autonome. Alcune Regioni, con i propri atti di recepimento, hanno dettato indirizzi specifici o discipline di accreditamento per i formatori che operano sul loro territorio: i dettagli sono nelle schede regionali qui sopra.</p>
+    </details>
+    <details>
+      <summary>Questo sito è ufficiale?</summary>
+      <p>No: è un osservatorio indipendente, non affiliato alla Conferenza Stato-Regioni né ad alcuna pubblica amministrazione. Le informazioni provengono da fonti pubbliche (Gazzetta Ufficiale, Bollettini regionali, banca dati Olympus dell'Università di Urbino) e ogni scheda riporta gli estremi dell'atto per la verifica diretta.</p>
+    </details>
+  </section>
+</main>
+<script src="comune.js"></script>
+<script>
+scheletro("accordo.html","L'Accordo 59/CSR del 17 aprile 2025",
+  "Cosa prevede l'Accordo unico sulla formazione, le tappe e le risposte alle domande più frequenti.");
+caricaDati().then(d=>segnaAggiornamento(d.meta)).catch(()=>segnaAggiornamento());
+</script>
+</body>
+</html>

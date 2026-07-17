@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OsservatorioASR.it — Recepimento Accordo Stato-Regioni formazione salute e sicurezza</title>
+<meta name="description" content="Osservatorio indipendente sul recepimento regionale dell'Accordo Stato-Regioni 59/CSR del 17 aprile 2025 sulla formazione in salute e sicurezza sul lavoro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <section class="changelog" aria-label="Aggiornamenti">
+    <h2 class="micro">Aggiornamenti dell'osservatorio</h2>
+    <ul id="log"></ul>
+  </section>
+  <section id="mappa" class="mappa-sec" aria-label="Mappa del recepimento">
+    <h2 class="micro">Mappa del recepimento — 21 amministrazioni</h2>
+    <div class="mappa-flex">
+      <div class="tilemap-box">
+        <div class="tilemap" id="tilemap"></div>
+      </div>
+      <div class="mappa-lato">
+        <div class="legenda">
+          <span><i style="background:var(--verde)"></i>Recepito</span>
+          <span><i style="background:var(--giallo)"></i>In corso</span>
+          <span><i style="background:var(--rosso)"></i>Non recepito</span>
+          <span><i style="background:var(--linea)"></i>Nessun atto reperito</span>
+        </div>
+        <p class="mappa-note">Mappa stilizzata: ogni tessera è una Regione o Provincia autonoma, disposta secondo la geografia. Tocca una tessera per aprire la scheda corrispondente.</p>
+      </div>
+    </div>
+  </section>
+  <section class="contatori" aria-label="Contatori">
+    <div class="contatore v"><b id="cRec">0</b><span>Recepito</span></div>
+    <div class="contatore g"><b id="cCor">0</b><span>In corso</span></div>
+    <div class="contatore r"><b id="cNon">0</b><span>Non recepito</span></div>
+    <div class="contatore n"><b id="cVer">0</b><span>Nessun atto reperito</span></div>
+  </section>
+  <section class="filtri" aria-label="Filtri">
+    <button data-f="tutti" aria-pressed="true">Tutte</button>
+    <button data-f="recepito" aria-pressed="false">Recepito</button>
+    <button data-f="in_corso" aria-pressed="false">In corso</button>
+    <button data-f="non_recepito" aria-pressed="false">Non recepito</button>
+    <button data-f="da_verificare" aria-pressed="false">Nessun atto reperito</button>
+    <input class="cerca" id="cerca" type="search" placeholder="Cerca regione…" aria-label="Cerca regione">
+  </section>
+  <section id="griglia" class="griglia" aria-label="Elenco regioni"></section>
+  <section id="andamento" class="grafico-sec" aria-label="Andamento dei recepimenti">
+    <h2 class="titolo">L'andamento dei recepimenti</h2>
+    <div class="grafico-box" id="grafico"></div>
+    <p class="grafico-cap">Numero cumulato di recepimenti formali dalla pubblicazione in GU (24/05/2025) a oggi. La linea tratteggiata indica la fine del periodo transitorio (24/05/2026).</p>
+  </section>
+  <section class="cta" aria-label="Segnala un atto">
+    <p><b>Conosci un atto di recepimento non ancora censito?</b><br>Le delibere regionali spesso arrivano prima ai professionisti del territorio che ai motori di ricerca. Segnalacelo: bastano regione, numero e data dell'atto.</p>
+    <a href="mailto:segnalazioni@tuodominio.it?subject=Segnalazione%20atto%20di%20recepimento%20Accordo%2059%2FCSR&body=Regione%3A%0AEstremi%20dell'atto%20(tipo%2C%20numero%2C%20data)%3A%0ALink%20o%20riferimento%20BUR%3A">Segnala un atto</a>
+  </section>
+</main>
+<script src="comune.js"></script>
+<script>
+let REGIONI=[], CHANGELOG=[], META={};
+let filtro = "tutti";
+let testo = "";
+let griglia, tilemap;
+
+function render(){
+  const c = {recepito:0,in_corso:0,non_recepito:0,da_verificare:0};
+  REGIONI.forEach(r=>c[r.stato]++);
+  cRec.textContent=c.recepito; cCor.textContent=c.in_corso;
+  cNon.textContent=c.non_recepito; cVer.textContent=c.da_verificare;
+
+  /* mappa a tessere */
+  tilemap.innerHTML="";
+  REGIONI.forEach((r,i)=>{
+    const p = POSIZIONI[r.nome]; if(!p) return;
+    const t=document.createElement("div");
+    t.className="tile"; t.dataset.s=r.stato;
+    t.style.gridColumn=p[0]; t.style.gridRow=p[1];
+    t.textContent=SIGLE[r.nome]||"";
+    t.title=r.nome+" — "+ETICHETTE[r.stato];
+    t.setAttribute("tabindex","0");
+    t.setAttribute("aria-label",r.nome+": "+ETICHETTE[r.stato]);
+    t.addEventListener("click",()=>vaiA(i));
+    t.addEventListener("keydown",e=>{if(e.key==="Enter")vaiA(i)});
+    tilemap.appendChild(t);
+  });
+
+  /* schede */
+  griglia.innerHTML="";
+  REGIONI.forEach((r,i)=>{
+    const visibile =
+      (filtro==="tutti"||r.stato===filtro) &&
+      r.nome.toLowerCase().includes(testo);
+    if(!visibile) return;
+    const el=document.createElement("article");
+    el.className="scheda"; el.dataset.s=r.stato; el.id="reg-"+i;
+    el.setAttribute("tabindex","0");
+    el.innerHTML=`
+      <div class="area">${r.area}</div>
+      <h3>${r.nome}</h3>
+      <span class="badge ${r.stato}">${ETICHETTE[r.stato]}</span>
+      ${r.verificato===false?`<span class="badge autob">rilevamento automatico — da confermare</span>`:""}
+      ${r.atto?`<div class="atto">${r.atto}${r.data?" · "+r.data:""}</div>`:""}
+      ${r.nota?`<p class="nota">${r.nota}</p>`:""}
+      ${r.link?`<a class="atto-link" href="${r.link}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Leggi l'atto ↗</a>`:""}
+    `;
+    const apri=()=>el.classList.toggle("aperta");
+    el.addEventListener("click",apri);
+    el.addEventListener("keydown",e=>{if(e.key==="Enter"&&e.target===el)apri()});
+    griglia.appendChild(el);
+  });
+
+  grafico();
+  log();
+}
+
+/* ---------- grafico cumulato ---------- */
+function grafico(){
+  const box=document.getElementById("grafico");
+  const atti = REGIONI
+    .filter(r=>r.stato==="recepito" && /\d{2}\/\d{2}\/\d{4}/.test(r.data))
+    .map(r=>({nome:r.nome, t:parseData(r.data)}))
+    .sort((a,b)=>a.t-b.t);
+  if(!atti.length){box.innerHTML="";return;}
+
+  const W=640,H=230,L=38,R=14,T=18,B=36;
+  const t0=new Date(2025,4,1), t1=new Date();
+  const maxY=Math.max(12, atti.length+1);
+  const x=t=>L+(t-t0)/(t1-t0)*(W-L-R);
+  const y=n=>H-B-(n/maxY)*(H-T-B);
+
+  let d=`M ${x(t0)} ${y(0)}`, n=0;
+  atti.forEach(a=>{ d+=` L ${x(a.t)} ${y(n)}`; n++; d+=` L ${x(a.t)} ${y(n)}`; });
+  d+=` L ${x(t1)} ${y(n)}`;
+
+  const tacche=[[2025,6,"lug 25"],[2025,9,"ott 25"],[2026,0,"gen 26"],[2026,3,"apr 26"],[2026,6,"lug 26"]];
+  let ticks="";
+  tacche.forEach(([a,m,l])=>{
+    const tx=x(new Date(a,m,1));
+    ticks+=`<line x1="${tx}" y1="${H-B}" x2="${tx}" y2="${H-B+4}" stroke="#8A97A3"/><text x="${tx}" y="${H-B+18}" text-anchor="middle" font-size="10" fill="#5B6975">${l}</text>`;
+  });
+
+  let griglie="";
+  [3,6,9,12].forEach(v=>{ if(v<=maxY) griglie+=`<line x1="${L}" y1="${y(v)}" x2="${W-R}" y2="${y(v)}" stroke="#EDF1F5"/><text x="${L-6}" y="${y(v)+3}" text-anchor="end" font-size="10" fill="#8A97A3">${v}</text>`; });
+
+  let punti=""; n=0;
+  atti.forEach(a=>{ n++; punti+=`<circle cx="${x(a.t)}" cy="${y(n)}" r="4" fill="#007A33"><title>${a.nome} — ${a.t.toLocaleDateString("it-IT")}</title></circle>`; });
+
+  const scad=x(new Date(2026,4,24));
+
+  box.innerHTML=`<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Grafico del numero cumulato di recepimenti nel tempo">
+    ${griglie}
+    <line x1="${L}" y1="${H-B}" x2="${W-R}" y2="${H-B}" stroke="#8A97A3"/>
+    ${ticks}
+    <line x1="${scad}" y1="${T}" x2="${scad}" y2="${H-B}" stroke="#C8102E" stroke-dasharray="5 4"/>
+    <text x="${scad+5}" y="${T+10}" font-size="10" fill="#C8102E">fine transitorio 24/05/26</text>
+    <path d="${d}" fill="none" stroke="#007A33" stroke-width="2.5" stroke-linejoin="round"/>
+    ${punti}
+    <text x="${x(t1)-4}" y="${y(atti.length)-8}" text-anchor="end" font-size="12" font-weight="700" fill="#007A33">${atti.length} su 21</text>
+  </svg>`;
+}
+
+/* ---------- changelog ---------- */
+function log(){
+  const ul=document.getElementById("log");
+  ul.innerHTML=CHANGELOG.map(v=>`<li><span class="data">${v.d}</span><span>${v.t}</span></li>`).join("");
+}
+
+function vaiA(i){
+  filtro="tutti"; testo=""; document.getElementById("cerca").value="";
+  document.querySelectorAll(".filtri button").forEach(b=>
+    b.setAttribute("aria-pressed", b.dataset.f==="tutti"));
+  render();
+  const el=document.getElementById("reg-"+i);
+  if(el){el.scrollIntoView({block:"center"}); el.classList.add("aperta"); el.focus();}
+}
+
+/* ---------- avvio ---------- */
+scheletro("index.html");
+griglia = document.getElementById("griglia");
+tilemap = document.getElementById("tilemap");
+
+document.querySelectorAll(".filtri button").forEach(b=>{
+  b.addEventListener("click",()=>{
+    filtro=b.dataset.f;
+    document.querySelectorAll(".filtri button").forEach(x=>
+      x.setAttribute("aria-pressed", x===b ? "true":"false"));
+    render();
+  });
+});
+document.getElementById("cerca").addEventListener("input",e=>{
+  testo=e.target.value.toLowerCase(); render();
+});
+
+caricaDati().then(d=>{
+  REGIONI=d.regioni||[]; CHANGELOG=d.changelog||[]; META=d.meta||{};
+  render(); segnaAggiornamento(META);
+}).catch(e=>{ erroreDati(); segnaAggiornamento(); });
+</script>
+</body>
+</html>

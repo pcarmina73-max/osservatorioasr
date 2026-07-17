@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eventi sull'Accordo Stato-Regioni: convegni, seminari, webinar | OsservatorioASR.it</title>
+<meta name="description" content="Convegni, seminari, webinar e incontri pubblici dedicati all'Accordo Stato-Regioni 59/CSR sulla formazione sicurezza.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <section id="eventi" class="rassegna-sec" aria-label="Eventi">
+    <ul class="elenco" id="lista-eventi"></ul>
+  </section>
+</main>
+<script src="comune.js"></script>
+<script>
+scheletro("eventi.html","Eventi","Convegni, seminari, webinar e incontri pubblici dedicati all'Accordo. I prossimi appuntamenti in cima.");
+let CONTENUTI=[];
+caricaDati().then(d=>{
+  CONTENUTI=(d.contenuti||[]).filter(c=>c.approvato);
+  segnaAggiornamento(d.meta);
+  riempi("lista-eventi", CONTENUTI.filter(c=>c.tipo==="evento"), true);
+}).catch(()=>{erroreDati(); segnaAggiornamento();});
+</script>
+</body>
+</html>

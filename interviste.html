@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interviste sull'Accordo Stato-Regioni | OsservatorioASR.it</title>
+<meta name="description" content="Interviste a esperti e protagonisti sull'Accordo Stato-Regioni 59/CSR e la formazione in salute e sicurezza.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <section id="interviste" class="rassegna-sec" aria-label="Interviste">
+    <ul class="elenco" id="lista-interviste"></ul>
+  </section>
+</main>
+<script src="comune.js"></script>
+<script>
+scheletro("interviste.html","Interviste","Voci ed esperti sull'Accordo e sulla sua applicazione.");
+let CONTENUTI=[];
+caricaDati().then(d=>{
+  CONTENUTI=(d.contenuti||[]).filter(c=>c.approvato);
+  segnaAggiornamento(d.meta);
+  const perData=(a,b)=>parseData(b.data||"01/01/1970")-parseData(a.data||"01/01/1970");
+  riempi("lista-interviste", CONTENUTI.filter(c=>c.tipo==="intervista").sort(perData));
+}).catch(()=>{erroreDati(); segnaAggiornamento();});
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News sull'Accordo Stato-Regioni formazione sicurezza | OsservatorioASR.it</title>
+<meta name="description" content="Rassegna stampa sull'Accordo Stato-Regioni 59/CSR: le notizie dell'ultimo anno e l'archivio, selezionate e verificate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <section id="news" class="rassegna-sec" aria-label="News">
+    <h3 class="sottotitolo">Ultimo anno</h3>
+    <ul class="elenco" id="news-recenti"></ul>
+    <details class="archivio">
+      <summary>Archivio — notizie oltre l'anno</summary>
+      <ul class="elenco" id="news-archivio"></ul>
+    </details>
+  </section>
+</main>
+<script src="comune.js"></script>
+<script>
+scheletro("news.html","News sull'Accordo Stato-Regioni","Rassegna delle notizie dal web, raccolte automaticamente e verificate una a una prima della pubblicazione.");
+let CONTENUTI=[];
+caricaDati().then(d=>{
+  CONTENUTI=(d.contenuti||[]).filter(c=>c.approvato);
+  segnaAggiornamento(d.meta);
+  const perData=(a,b)=>parseData(b.data||"01/01/1970")-parseData(a.data||"01/01/1970");
+  const news=CONTENUTI.filter(c=>c.tipo==="news").sort(perData);
+  const unAnnoFa=new Date(); unAnnoFa.setDate(unAnnoFa.getDate()-365);
+  riempi("news-recenti", news.filter(n=>parseData(n.data)>=unAnnoFa));
+  riempi("news-archivio", news.filter(n=>parseData(n.data)<unAnnoFa));
+}).catch(()=>{erroreDati(); segnaAggiornamento();});
+</script>
+</body>
+</html>
