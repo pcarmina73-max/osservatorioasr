@@ -1,7 +1,7 @@
 {
   "meta": {
-    "aggiornato": "17/07/2026",
-    "ultimo_controllo": ""
+    "aggiornato": "03/10/2026",
+    "ultimo_controllo": "03/10/2026"
   },
   "regioni": [
     {
@@ -137,12 +137,12 @@
     {
       "nome": "Sardegna",
       "area": "Isole",
-      "stato": "da_verificare",
-      "atto": "",
-      "data": "",
-      "nota": "",
-      "link": "",
-      "verificato": true
+      "stato": "recepito",
+      "atto": "DGR n. 48/30",
+      "data": "30/09/2026",
+      "nota": "Rilevato automaticamente da Olympus il 03/10/2026 — in attesa di verifica. Titolo: Regione Sardegna, DGR 30 settembre 2026, n. 48/30 - Recepimento dell’Accordo Stato-Regioni Rep. atti n. 50/CSR del 30 aprile 2026 sul documento recante Piano strategico operativo di preparazione e risposta ad una pandemia da patogeni ...",
+      "link": "https://olympus.uniurb.it/index.php?option=com_content&view=article&id=37515:regione-sardegna,-dgr-30-settembre-2026,-n-48-30-recepimento-dell’accordo-stato-regioni-rep-atti-n-50-csr-del-30-aprile-2026-sul-documento-recante-piano-strategico-operativo-di-preparazione-e-risposta-ad-una-pandemia-da-patogeni&catid=27&Itemid=137",
+      "verificato": false
     },
     {
       "nome": "Sicilia",
@@ -216,6 +216,10 @@
     }
   ],
   "changelog": [
+    {
+      "d": "03/10/2026",
+      "t": "[automatico] Possibile recepimento rilevato — Sardegna: DGR n. 48/30 del 30/09/2026. In attesa di verifica."
+    },
     {
       "d": "17/07/2026",
       "t": "Basilicata: aggiunto il collegamento alla scheda Olympus della DGR 332 del 10/06/2026."
@@ -4331,6 +4335,266 @@
       "fonte": "P. M. I. Servizi S. R. L.",
       "data": "01/10/2026",
       "link": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxQQlNmZFdzTXhGWm9VMFhqY3k4dm84Y0xLZEJ5NGZVZUE5WHRVanZhM09uNjNaVlljX0NuRzlQb0JUVk9aSlUzUXFCUXVBYWZMOElVZWU4NkVsSDNPUms0d2FQdUxlRDdFOVBQMlhrWFd1RmphZkJlaXZrNFhsY0s4bGF1NGEyQ2xoZFg0X0hIQ1lTREpUX2dGNWk4bG9sbDhnWjdROG9nZkFVcnk0LW5kbFBxUEpEdDU0ZjJPTlpvenFGMEdxRUxTVjlscVg4d1hfdnAxTHNVaDlXNk9tdUtDVmd6OWJsV2h4aFIwWkxyYmNRNmJZQnh5TXVxTk52U29UT0dxam5CZWVKOHJPZFZuelNpU2tHV1h4M0xHUXc2UFZORzcxODdmMjR2STRld200TDMyRDZ6LTNRa01fMWdNRmlZUVptSUlDV19Zc2QxVUdCaVlvQUE?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "840e73481a",
+      "tipo": "news",
+      "titolo": "Dal nuovo accordo stato regioni, nuove regole per la formazione professionale. Guida completa per aprire una sede territoriale ANFOS per la sicurezza sul lavoro - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "03/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxOTTZsZEgxT2dXRi1Yd2d4SFNGem9CaVZkTXdXUi1FLTdjQkI2a2Nac2tIOUVSQnhsNDRVZXBMak9vWlZOaWZidC1PazFJZ29LbER1WXYxbGFqTFV6T2ZydERVcnZvR2NvTWFFVUx2eUtSTUdQQ3l2NzlHbFd2RWJPNU9zY2JYcS1PX205REU1UFdIeTBIUnIxU0NMQ1FSSDJ6NlVMSjZhX3VHN1pYcVFEYjJ6VkZWU3dtV2dZR0Y4eFRYdzNnRmV4ZnUycENFeW1XVDBGalRHdzNfMHdXaldBNkxISnB3TUF3eW4xV0pxZGw1NUM1d3RXTHVNZEx4b3NUNDJkVU9QUjJCckVHeHZ3dzUyb0lHejc3dmZnS2ttWEo?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "8044eb7a48",
+      "tipo": "news",
+      "titolo": "Datori di lavoro, siete pronti per i nuovi corsi obbligatori dell'accordo stato regioni? Corso Sicurezza Lavoro Space Tech - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "03/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQTk1McGNqOGdOLUtfLWRlU09LRkMxbzBtZldSdWtieDYtbUhQQzZQeWl0c1ZYUVZLM0hJR2xPRHpCY1hXN0FSVHQ0eGw5Y0F5MVhKR1ROeWYyd3N4RVV0VDFFSVZ6b2xEZzRqcGh5ZlpPSEJqUkxEa0lnNFRoR3dDZ29QRzVhM3FJaTN6YjNyNDZlT0FQc3RVRDlXcEhtZExpMHlwYnlTVnl5M0toNlZjOUhoOHBkbWV5eWVVWUxvYkRudm5fYUpSUF9BVVFlWGpsTHdaeWtjbEpmM1dIcHRIS2d2S2gteTh4MFNhUg?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "ad768b55aa",
+      "tipo": "news",
+      "titolo": "Guida pratica ai corsi formatore aziendale e al nuovo accordo Stato-Regioni 2025 in base al D.lgs. 81/08 per la sicurezza sul lavoro - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "03/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPdW4wS19Jel9iTlZkWlljUFJTMjhUcGl2YkthS2FrNnV5RkI3b3IxN2ZsMjdBZ1NKZzdpeXJseW1RZkRUazNZU1R1cjVobmdQRTJqSFhoZzh3ZE4xOElzQkg3UFczY1NPa2JacXJaQm42eFhhcGVUems3ZDJWYXdVWGtPMWZvSVIycGhnMl9GMkJDdHBjVmhWZElEQ043Um1RZ1hWa21KZ01Ib0VFUzZaLTJDcFd6ZGFfVkFQQzRyS0lva1BTdXY0NmtVX18tbC15OExuaEo3T3JyY1RGLXJmY0tVS0Vud0dHQzlvZVc3QWhEWHB2NGtlRDE3UGM?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "5e8ddfb40a",
+      "tipo": "news",
+      "titolo": "Come integrare le nuove normative sul lavoro sicuro nei programmi di formazione per formatori? Nuovo accordo stato regioni 2025 rspp esterno interno rls rlst preposto datore Evento formativo Formazione Specifica Corsi on line obbligatori sicurezza del lavor - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "03/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxQUUZuVGs5a2hQeXNxcmk4SHcxdjlRazgtcHhtaVdUak5jOUM2TXhEdjJkUUsySHpMbU96bDB5SW9mbnNiN3V5SWp5RXBxX2JpcTVzOWVvOEhiT01yblVHSHh1bm1mVThVTmdkRnMwdER1ZnlBVl9aUERoTEd3TmF5bExqTklwSjZzR0lFV3BZNDRsSlVNSjBvVmhndkl1WkpiQUhycDBaRUdMcG9uaUJfbHhGMnVxZzdMdVpQVkg5Z0pxRzhwZF8xLS1FSU9lbWUzX29nSll2MWwwMnE1Zm4wUzhhZko1NkZqcERWZHFkcjdsUTMxczJIbDdjLVF3N2FaZ3BVWGhaeVhuYmM2TzZwX1ZWb2sxM0xzUjlqbFJwQ05Vb3NBTG01YTZTaS1oRUlldW9fUkJQMzgtQnZOVVdnQnZTcUw0X0daV0tiR2FkTFlMVVdOM19v?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "c6f49a1aeb",
+      "tipo": "news",
+      "titolo": "Formazione aziendale sulla sicurezza: tutto quello che devi sapere Nuovo accordo stato regioni 2025 corso formatori lavoratori datore parte base generale Corsi per Datori di Lavoro con compiti di RSPP (DL SPP) Corsi DLSPP fondi interprofessionali gratuiti - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "03/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxPSUZjUWw5U2tZemVWQk5rNC1QUHNiZ3BFTVZBYnV5U3hKYmtLWWxTRVVvc3dBZHVpS3doTmdha1lhT0ZTZ0hpN1dSNUk2VEZqNUJhWktla1l5Rkd3cUVhSU5DUHRPcGxycDJpa0VxNUYwOFpmNEk0QlEwU3BhcWZBSndhNzlmaG15RDV0TUllVWZ3NUtWLVQ3QzZ1Z21HWjFpTmVDQ1pvV096eEZReHBUdWlSNVJidTFaMjFMa1N5bks4NnNOQTFDVW5qQ1hIX3gxN3pWQjB2aFlid2FGU3lrejVpWndsUU92TGZySTBHX0c0WF9sTHIwcmtmeGp5WEdZVjQtRVpxejI5R290NHlhODZxV3VBREd4NUppWjJyWHA5LVR6V25uWmlaaU04THpTQWtqT3ozM2E2aVl2YXBpRlVWcndlSVBaR0hITW1oZVpVU0ZNVWhJ?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "f4c1bc824f",
+      "tipo": "news",
+      "titolo": "Formazione specifica sulla sicurezza sul lavoro per le aziende Nuovo accordo stato regioni 2025 rspp esterno interno rls rlst preposto datore Evento formativo Formazione Specifica validazione programmi formatorivi organismo paritetico associazione naziona - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "02/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxQYm91ZTRwM2Z5MXI0MG5FWXl4RGFlcFktcXZURlljcl92R2JfdVZtVVlGUnFndzNzTFV4WDVTY1hYWVByN2d3N25tVGtocEtkR1hUNzU4Ul92QmNOU09pblUtVUgwei16YzJFNnBNS2owMm9kb2NjX0NDU2hidzFlcnB6ZllRYW1jT1BtNEl2aS16dmQxaHRLUmd6TkEtNFhtYzVxZnFuZVp3M0ZsQS1BWmJpdlB1NTc4NG5ldTJ3ZGpjckhlNE40UDhJd0NUajF5VHhpVldBTV9nUlpPV09mQ0ZLTkhYS1U0RTJETmxSU2xYQWNabjBIUHVJVWtlZHdFTGRkUXhTVkxjRDRvR2JPQ1Y0OTY4c19nOU1YZXB6Q0NYNkNqbmpoOVlJMkgxQk0ydmNyVlc2QmNRRjBwU09QUmF6czU3NjF3Rk9vSjJrTnhBaS1iM2RRdw?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "3345f138c2",
+      "tipo": "news",
+      "titolo": "Novità sul Nuovo Accordo Stato-Regioni 2025: Corsi di Formazione per Datori di Lavoro - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "02/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZEFEdjNaTXNmZ09VS3RUVWJJUkhtcnk0QWhfOG1VOGpzc1lweEZYcFZQWFNvU0syMDlhc1VoY20wZ1h5R0t3TlJPR1dXMTlkUUJseS1MTUdBTGhMRnFEVXhzOWEybEd0SUFXclpRS0xPaEI1MlVabm0xcG9sYjE4MDh6MGZiYVY3ZEd4Q1FOazlNeWh6Rk5lRVdsdFRmX1ctZU9heEVRa0JlcFlvcHdiZ05kN2xlcldlQVE5X3V3?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "2c35169d71",
+      "tipo": "news",
+      "titolo": "Sicurezza sul lavoro: tutte le novità dell'accordo Stato-Regioni per il 2025 Nuovo accordo stato regioni 2025 rspp esterno interno rls rlst preposto datore Evento formativo Formazione Specifica validazione programmi formatorivi organismo paritetico associazio - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "02/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxOOGJQN19sQ3Z4eGV2X3NwZWNhVUZLZjRxTHRfTHpUdElaWk1JVTVJUDVGTnFWU1g1dG9MNVR0ejNGbEw3NDZ2RktUQnFBNW5pQVNhTVh2SUJudzVZTnNpdVRVUE1nYWh1TV9FSVZVVk90RzFVbjhZODU1Q2VOejg5Vk1rVTFhNnRiTlhyc0I1QW1yXzUxM3RfalJzVy1aOTdtSndycm91MzZiU2NjWGpiX2JEZWROYmU2dlA4bFN5QTIxdEtzVnEybE5NckN1dTl0TVZXNndPTFl5YWx4Mld0RnRUak0zelBBc1NyNjVBVVBRQkZoNElTRDIxc1RGZGRtekpXc3ZpclVmcXAxY056UmFrTGZra1B1d3FaeFNxLVNKeFROaThZV0dfNWhDQ29WZG9ybHB5R3k1NDBiZDJiWEdna1Y2c3lpQ1ZBZ1ZReF9OMld5eVE?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "8a88d348e2",
+      "tipo": "news",
+      "titolo": "I corsi più richiesti per la sicurezza sul lavoro del 2025 Nuovo accordo stato regioni 2025 corso formatori corso formatori rspp rls rlst preposto datore lavoratori ddl dlssp dl ssp aspp patentino muletto gru trattore escavatore ple - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "03/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxOemRaQ183T3VtM0E1ZXF2V2RJNl8wWHg4Qk5meTFsZFNGbnh1RXFJQzFMdGl3bWlXVTFQZ3FRb3RTWmQ1bGpOMXBBVjhDZ3hRTmJsT19ZMDBNd2dDWWYxQ1cxMkszUkdiaWJFemRvWklsWHlmZUp2QkxwVzlJVHR6Wjl4Z3ZVMEVrSEVFR2duNVA3WVpZTGFXRDhVSnQ4Ym1KZng5WjE1QzJ1OVFjTmlYcUk1TWJ0anU5TVlhUXVseDRjRHdreGpMUDg0cXI5aDUyMVhQVTd1OHl5WGh6M2xrcTI4UU11TERCd3BQTDgwM1N0bHJ4d1hyRFZfZFVYenNKX2JhcjFaZVZoLVUwSHlaOFJ5a3p0NTVhMkFPLThLTzV3QjZqbE11MGZ3ZTYzYXBkMmlIXzNLWW9LVms3SWR3UXJaZkRoZVZPMU1zV09OVm5JZHltbUl4dQ?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "4a38339fd8",
+      "tipo": "news",
+      "titolo": "RSPP esterno e datore di lavoro: nuove linee guida per la formazione Nuovo accordo stato regioni 2025 realtà virtuale app formatori docenti rspp esterno interno rls rlst preposto datore Evento formativo seminari gratuiti più partecipati dai soggetto formatore ita - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "03/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxQTGx3SmxodGFhbW05bGNQUWRwdHp1VkI2NER6Mi1LRWJoaEh3RTJxMk1fTERLTGw5RFlSejJwcnVpOVZBZTZ6R0hRMGRjb3JQb0hUWXVNVmtyMWtNQkxLOFNDMktPbmplZjltVlh0WmRMMTFSbnlfeTVfaUJvS0k3c3ZkeEtaUXVvSTZrRkJpUTdsWFh6RU9wVVV0WFVDc1g2UzFDV1B0OU95bTQtV21sMFlLb0ZHRGRzc3l3WU1TdmJiUmF0enIyaW1ybE5QVl9UMXR6a1RmY2NUZUNzR09HSE9Zd0dsMWpZVDRhSExscGh3OGZIeGdkZ3ZZTzFKU2xwMGg0Wmk1T29JcWVoOHFmWEVZRm9YOEptRF9NdE5ZYUtYOGxZWG1kZzFQWmJRYjVISGxpcFBBQUJNLW9lejIybWlCVUJWdDBvRXNVdzJDcG5TLVgyaUZJ?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "c18efcf99b",
+      "tipo": "evento",
+      "titolo": "Corsi di formazione sulla sicurezza a Novara: entra nel mondo dell'e-learning Nuovo accordo stato regioni 2025 corso formatori videoconferenza fad aula virtualecorso lavoratori datore parte base generale Corsi per Datori di Lavoro con compiti di RSPP (DL S - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "03/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxQZjFNRzdoVEVySjBxcDVxX1pZdEdOZGh5eVprWThvbjdRZjJFZHo4a2lpTG1LMnkzcVg1RDJ6dV9UZi1jYTYwMEdjdmszLTJWVm1EQ1BmT3dldDFmOUZ1ZzBMZ2tSeFlRUDNLSzlzLUdxa3dkY0JYdlkycnJkS3kzRWJsOXJUUV9MUklfSE1MTW1JdFNob19WRXlLVDNZaTY4WDVjQmZSTTcyaGpvNTRmOUtGYm03eGxSd0E3YTFQLWR5aGxzVGJqakJlR29CYzZEUHVfRFFKejY4bUFObkh5Rk9rcUg4WlpJdFJQMEZHbVN4NThUVEtRd0hITE5ESm5EZmxmcEpRYzNKSnozLTJ5SjlXaFluYWFVamE4eXNTLU1xRlh4OEN2MUpLWXRTRXFyaGNkdXpxaUdUdDAzamhUSGFhVXk4YmFNXzh6Z0F4TGpFODF5VEE?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "b55270e31d",
+      "tipo": "evento",
+      "titolo": "Sicurezza sul lavoro: l'adeguamento dei corsi per l'RLS alle nuove direttive Nuovo accordo stato regioni 2025 corso formatori docenti videoconferenza fad aula virtuale online corso formatori docenti rspp rls rlst preposto datore rischi specifici basso medio alto l - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "03/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxNYU1iNlJjaHFncHJsUDg1cjBaNzJ0dTFWTlA5NTdBbGprTm1JMUNTTGRfQmtkblVnWk1BcWpYSGZzdnhJNFVRTDZQYUhaYVQ5Ymw0VUtPclNWRThzS0h5S3djY0ZWX0loTlE1aDZSN0o3UzNfWV9LcUlSZXExenhyMlZpMUVYRlZnYy1DcEhoZjhfMmlUMVNSNVZGaEc0ZXhZc09fOW1LemR6bVhTMUlOaWNNR2NxSlRqUVNvQkFzcXpaeDVsNVBwWmRfU0RFYTlxWWEyemp2ZFM0RVZJNk1RVVlUQ09aNDh3X29kV2N4YWlBWWkwZjZfX2M2MXNzZmlhYnRTUWdCQ3hKM1g1OGpzSmRxZGNmMFRHMWstY1F1T0JnTk1vVnE3ZW9VYW51clJlQWxXdG1lVTBSazB2aUNMclVXRkxfdDFyX094a2RLYXZzdzE5?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "30b52ad2e9",
+      "tipo": "evento",
+      "titolo": "Corsi di sicurezza sul lavoro: impatto dell'accordo Stato-Regioni nel 2025 Nuovo accordo stato regioni 2025 corso formatori videoconferenza fad aula virtuale integrazione corso lavoratori datore parte base generale Corsi per Datori di Lavoro con compiti di R - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "02/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxObThTc3pjUEtTUVROZmYtYUNsWGJuN2tQXzdMZWxqXzU1ZGpqTEttWXo4c0VHNDBUR3ZYbHBSQ3gxd2FCWXpkTy1xTURaNWxsSUM2ZFRUT3F1WDRtSV9VOGxMN1U2cVFidjhQWjRXczhsRlpOTHY0dHdDci1vRk16QkxvV0c2ZGdTVXBCS0NRcWctZ0lqTERLeHNpYVc3QUg0NURQc3hCTlNsdWpPYUdwTzV5MlI1YVFSR2FJWlk1YzJZNDJIbUlvR2d3ZnlseVphSC1UT21fampMaVBZMlpMNDZkcjlRZnc4QXRoVEFNUlhXQm90WWJKYm9rLVFDcEp0OVMtM3JrdllDUHYtZFBvTHVnQTB1bVNZX2JibXFnTFB2LVhwMlV4VGhFYkZUWXZXbnpFTkdGY0VyR1g2MnhFN0l4SHVYb2NJcmxRNTMtTFdKRGZOY3c?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "73d200e076",
+      "tipo": "news",
+      "titolo": "Aggiornamento formatori: come seguire le nuove normative sulla sicurezza sul lavoro Nuovo accordo stato regioni 2025 parte base generale haccp prima seconda Datori di Lavoro con compiti di RSPP (DL SPP) Corsi DLSPP gratuiti gratis crediti formazione p - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "02/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxORjVTNjI0M3pKZXVTclpoWV9lY3NLenppcGpjT0JyOXdEa1ZiQURsWjJqQUNDTURrX0gwMW9TbnBJVUpOenN1RVI4amVzanBkMWZBdm4xVWZVQTBwS0pUOVlmaFVlYXV3NWg4YnNTUW41MGlFc0NxU3BIRGh4SXYzdDhxT09YVFRzdUhYcU1CZDBxb2NKVnZ2NGVIR0M5WnFyVWtteGJtR08yVHA0bG1PSkU1Y0pVQlB1ZUpiR0pGRnJEVWotNWJVSjF3YVREc0VLTWJKWF8yTlFTYm5kbXVXeFVka1hVYk43UmtaUlZDelRHaXN3WTZQSmFjaDcxU1Z0ejU2LTkwR1RlMFFjdjNaT1pjcXhzelFsTFRwa1I4aHg1eF9FVFlkblBNQ3FwaUhweGRIQkZCR0F5TWY5MlotRGp4SkQ0U3Z3LWhVdzB3OF9UeVFvMnc?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "640bc455d6",
+      "tipo": "news",
+      "titolo": "Nuovi Corsi di Sicurezza sul Lavoro: Tutto quello che i Lavoratori Devono Sapere Nuovo accordo stato regioni 2025 nuovi codici ateco corso formatori lavoratori datore parte base generale haccp prima seconda Corsi alimentaristi per Datori di Lavoro con com - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "03/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxOOVo1SFZvR2hiSTFjVHV4b25CTTdTNlFDN0tuWkd6SUJEZjVOUl9uOUN6T0M3V1lUV1FOSk9vb3huLUExdjFOZXRFM1Jzb0EzM1lwZVcxcTZqb1g3U1EzVVJrY2FRLTVvTFNYVTYxa3FRcVA4Nl9vOGJtYVFrSHdaTVFjSWo0QXo0LXBZV1VyWjhNdndoV0VwcmhIWElSYnFWd3VvbTlXQkh1Ui1vTF9ycWNQVU1lOE5abkZMakVlcHlNMVlQanVrdXlBM1VEOFVMNXpwZGs3YjBMUnkyc2ZUdjN3OFlTYmpsakQxSVZHb2hBU2lCUlRmby1LaDU1OURhRXk5V3RRUW1pREtELXJhYlFvb0FiOEtZajNOMUVKeHVRUGVkalZqbl9VZGVmeHp1dkZ0bjFVYmpKRkIwSGpTbkt2dXNLUjJmVDNVVURnSThHWjdS?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "dabb4a1150",
+      "tipo": "news",
+      "titolo": "ANFOS e la sicurezza sul lavoro: una partnership vincente per la tua formazione Nuovo accordo stato regioni 2025 corso formatore docente albo nazionale corso formatori rspp rls rlst preposto datore lavoratori ddl dlspp dl spp aspp - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "03/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxQNnNaVVZSVTI1aE9YY01GWENXVFIyQzFkSDd1aUZCSldDOW5OMjdDWWtYNFJzYnU0Vlh6ZGpVYzZWM0ZwY2hjbmoxVkxyc3pxWW9LWmZidngtWDJJZTdMUW80ZTBvRjBtU0FSSmg2YmVWc3I4Ym1fdXppb1VEVU9DUjJPYm9XWXFKdk5wc2l1dXk2T0QyNTluWHAxVmtFMUhyekYzQ0FyYzU1aG5YRXdYeHFIWE1oNGN0cXJ0THVMck5ISWd1N1JGdnR0enpfOUMxSy1mNmdNVVZEdDFYYzFORlZXVXJUcmx0U3VoNmJlRXprVmZaLTBuTVBTNW5oUVY2UU9faDJyam5nOVQyUTdleVVkdkZuMkU0RWN3M0hkcVh6cGxCWkVlV2hyVU9FRGhtZFRJVFhZQlpkYVdLWUlxOUxUcUVXNGdtZ0lRNnRVREF4OVpQdzVV?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "3ebd6d7a51",
+      "tipo": "news",
+      "titolo": "Corsi di aggiornamento sulla sicurezza sul lavoro: Partecipanti connessi in tempo reale Nuovo accordo stato regioni 2025 corso dipendenti in lingua lavoratori corsi in lingua corso formatori docenti rspp rls rlst preposto datore rischi specifici basso medio alto l - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "02/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxOTldKT0V1b1lsV1lGYmprOFJpNEdOVXBoT2xjY2FCTUJOeU5Wa1RRRV9Lazd4WGhCTldOYVlBOUlpV19tZDhiTjVnbGtlNERqWjloMTJ1WW80X0tfd1ZfOFpEMkRUUWFBbWI5bGdwODRseUFncnFFLXRLYTFUR0RHYkJZZnYxRWF1M2ZOZGxyUllNN04zLXF5RXBSZGs4WkRaOC1EMGliLWRzOXh0ZkxYVE44M1BLZ1lyT285cmlBMkFGNGNsdVdwdi1ia0V3Nmt6SU9RN1kyaE14Y3dqeVdLWGpaR21nbHlRa2NjekNWejNiS3FRZkRDSVBQNzZRQm11RVI3V3NlWEh6OHpaLThkV3pVb2ctWEd1VlNyMWw0Zy1fcUs5Q05INUwwUm03d0dWRFVpMnFHclBFQ0ROSTRMNkNOM1pJTVNOanQwbEtNcTFnVlY4Qkcw?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "277a42da3a",
+      "tipo": "news",
+      "titolo": "Tutto quello che devi sapere sui corsi per la sicurezza sul lavoro in base alla D.Lgs. 81/08 Nuovo accordo stato regioni 2025 realtà virtuale app formatori docenti rspp esterno interno rls rlst preposto datore Evento formativo seminari gratuiti più partecipati dai s - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "02/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxOVkxOcHl2S3N3NUtmWFRDQ3F3TE82RDJDcTRGdnVJRkx5XzlQSURjam5PM2gzMS1nOXl1QnpjSVFmX0V6T2xoX2J4U2ZHcnFJOVI1WDdzcVVvc2s5X0hLYnl1V1BOcUlJQUlZcElPQVE4UFRlQ25vVWh2ZFAzeVJ2bllVYzE5cXFYY2VVS2RaRDY0Qk1PTV9SLThyaVphcmJfc0NFd2Rhb2JsMlh3TmxoUjdwaTVycU9hQzBNTTlNTUhxdnZlb0pxRnlKSDczMVo4dFN0ZHhvVGpQdi1VMnBXY2k2YlNFQzRQXzQxSzYxcTAxM2N6dUoyVy05SmppSFllRXVSM3FjWjYzdDhLeXZnR1dmU1RYdlFEQVhuTFVuZEd2ZE0weFVmTHA2SEMyMjlRNWZyLWI2Y2RuUnpiQ21FUG1xZ3ptNzdFRHlmSHdFclNBUjZQZldn?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "57274f6fcb",
+      "tipo": "news",
+      "titolo": "Sicurezza sul lavoro: le nuove raccomandazioni per i corsi antincendio dell'accordo Stato-Regioni 2025 Nuovo accordo stato regioni 2025 rspp esterno interno rls rlst preposto datore Evento formativo seminari gratuiti più partecipati dai soggetto formatore itali - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "02/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxNM0hiS0lUZFEzYUlUbVp3dmJ4TDd3MXJaYnZTcWlmd212bjZabkVkRXhIYWJEckVIX1lpVTRMVURQRGRxbVRDU0JsZWE2Wm0tX3NfRkhNQm54UGhOdXl4dEZzTzVlc1BzWlE0N3pVa0UwREtIVGZhYWo0dWRWbXJTZ1FwZW42UVlxZl9IclEwRUE2TTFTNDRJMWFGUjEtb2NzUGdYVk1HUnpiSDlRSEtLQ1Q4RXFkWVdPUm5lblVqeEJoYkZhVU5kZkFyUThDSm1UblpCVFVHUi0tM09FUE81dDU5Z0FzTkhaTlJVT1FqVFEwY0l3NEIzT2xvSC1MbDNQVkg5Y2JDU3RIUklhUG5oa1VrU0x3UkpYTWVjWkhkZml2VS12bFA1NzNBWTVXV1R3d0R4NW9fMXE1cS01dTJ6WTVUWHNzOUxkbGZPTXZPUVZTUXc5MEE?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "6a61bcbb42",
+      "tipo": "news",
+      "titolo": "Nuovo accordo Stato Regioni 2025: formazione per il datore di lavoro Nuovo accordo stato regioni 2025 rspp esterno interno rls rlst preposto datore Evento formativo seminari gratuiti più partecipati dai soggetto formatore italiani di aggiornamento obbligatorio - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "02/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxNV0RjUktkV3NOYjZ3VkhQVzUzeHkzWUxoUkxudW9Qc1RDb0RudmJ4RUkxSnFFVzQ3bWxOamZaV05icWdVeWlEejFrWlZnOU1vbmZ5ZV9DRUZ3LU96RWRCUWJpT2std2UtUzNqZUlKdlgwa3p3aWJQX2hLWUlUcFNFVUJoaGxDMDJNRzFZc2ppTzJCRVBlZ2NoZzQtc2JSUUFlSTh0enNTdkw5a1VmRl9TYlJ0ZmVLYlJXMjByWDNkUFIxRzYzcVVHLXVHTlhiVGJiZkp4MUJxcE03bmZzeXpuTnNWZm9xc051V2JsSEZaRGhJZGd5WE9TRDVtcGNBckg3bzkwV19DeTdHLVh0dzIxalNad0xwaFVMVlpNeVV4YnNwVko3QkxfRkV1ck9BMmFNU1RYczRwVjd3XzNEZ2xfakVtOVFJQWQyUWVYbmdOdlI5MGJoS3JR?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "1f9aaea5b5",
+      "tipo": "news",
+      "titolo": "Corsi di sicurezza sul lavoro: come proteggere i lavoratori dai rischi medi Nuovo accordo stato regioni 2025 corso formatori CORSI DI FORMAZIONE SICUREZZA SUL LAVORO - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "02/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQR3BxQS1XYy1SYU4tUU1OazlfWFNoZ1RvZ2xZVDZ4cTVjV2dtX1JzNUo4LWNMRXFPTGZNTDRFT3g1SUVMMmMxRVdBRVF1OGsydHpqVFNqcXN1QXgyX3B0aU01U3FqMFlkaXIwUXRSS2RQYXdCc1VvNzZONi1aVTBIXzBtNWFYX3diYlo5YmltRWp6SG8yZFFhWHV1RHpPd1BRdENUQVo3QXJGOExuZUxHY3d0QXpUd3BnUXVCX2FEazEwX0daa0kzYWFZODNxZ196SklsX0Q0TmlsTGUwY29BNUdydTZwczE2WVNPRWw4YmQtV1pXSjJjTTRXNmpFdkhZRlhycEdTTDM1ZEZ1UzZJVjc5UVVyTjhjOG1aSTQ0d08zV0dYbzZPVw?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "5e2b70625e",
+      "tipo": "news",
+      "titolo": "Implementare la Formazione RLS: Le Nuove Direttive Nuovo accordo stato regioni 2025 nuovi codici ateco corso parte base generale haccp prima seconda Corsi alimentaristi per Datori di Lavoro con compiti di RSPP (DL SPP) Corsi DLSPP gratuiti gratis cred - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "02/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxQVm5kTVNNN3BCTkdjMXVMSzFVQlJhQVZDUlFHNnlTY01yS1JjY3pMNThKNGR0RlZHbWpYTGVpVGU4VUNtN0FUdW1BWW90T1VXc1ZKMzN2clZ3TlhURmRwNDF2VUN0OTNOTjRib00zSnE4MlhzZnhYMEZLTThvVGY4SHVrQTNpUU9hNnE1Q01YYS1FZEx2c1NSYktLS2NnYjZrRHJ6c3AwTUJEaE01UlY3c2NjZ0pJWm5ubWRkOHNMa3ZPbVVsbEpVcVU3UGZXMlpCNnZPaWxwU1B3VkJFc2VsdF9nTjFrcGlLd2NHTGMwckdad2l2eV9Kdi1nV1AwcnA2SGFlaXVRcEVETEJwVFk1UzZrdnhleEVaNjVBZUFVdjFfTGIwTU1wNDBtOG5FSHpVbmowTEtGaXEwSVl1UkdHT3dDS2Q4aF9QWmJrU092OWpJVWU3S3Zr?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "b175daa1ad",
+      "tipo": "news",
+      "titolo": "Corsi antincendio 2025: la formazione che fa la differenza nella gestione del rischio Nuovo accordo stato regioni 2025 nuovi codici ateco corso formatori lavoratori datore parte base generale haccp prima seconda Corsi alimentaristi per Datori di Lavoro con co - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "02/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxOaTZ0R3lob3B1b1dyZ19sV3N4bk1BaGFjWnNjbjNHcXpPQ1FvN3NRWmY2bklqZm43cGFVczhXQS1rOFdxc2w1UWdPMUFDY0NMSVFYRm9JUHRYQkdlUDhINjFpbUZ4Y29CLVNVRXJfWnB3bEJYRGVUVHNmZDVLNEFSdzdybUJvV21CRmswcTlWbkZ4RW81X0dGR2pwRUtwZDRzOVMwX29CM2NxVmJoYTBvTWltc0tCOWRKOFpTTkJrcm52dEgtNHpISUVjNGJrSlkzd25McmdxU2l4ZnhEMmFnai04UGl0MFI3REplZU92aTAwbDZSMXRfeEJhNXRjMzdsdmU4bElMeUFZbnpGVWRhRXM2bVBmUTdWOUk1anFrS09TYXJVaG91alV5QXl2UDFhNUVJYTRrLWZpRjg1RDlnSnpPRW1xQ25KTG1ieGUxUHN4RDBRckE?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "4ab9438f05",
+      "tipo": "news",
+      "titolo": "Sicurezza sul lavoro: approfondimenti sui corsi del futuro Nuovo accordo stato regioni 2025 corso formatore docente albo nazionale corso formatori rspp rls rlst preposto datore lavoratori ddl dlspp dl aspp - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "02/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxORy1BZUdOeTUwZHdMMVk3OHktckY1YkU2OFhWdU5wNlZyTFJkZThBN2hDUGNzMmE5dnVidFdDWWV2YWVNOUo3WmNCLTBPcWRUUXNka3VzTUxOblpuQ2xTajR0cEFNSjNSdXlDTXJYcHVGVkh2bGxFdkxFekwzTHpqWkhaOWRIU1JxRUthc0FNZjlGcVE1OXZjMzFRX2llTzRGNUFLdmk0d01UUG1BNTR4VFlpUkVfRlZ3aEkzaG03dGdYeU9rbS1MSWJaeE1xM1ZuMEduVHJTS2xRYzlJV3lUR1ZhWVdjWkJKbVdZQmtBMWJyMjNRckpDeU5HN2hqdzBzcTd2SWNDQnhNMjZqS3c4eFFMd1Q1aXpNUGpvQWMtX185SnpweGh6RFdZaTFaVHJnMzdYVjBpbDB2N1FTdDdNXzd4TFhsczNnM3ZvcnN5R01FQ1hiT1pr?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "90280d541b",
+      "tipo": "news",
+      "titolo": "Formazione per la sicurezza: i nuovi corsi del 2025 Nuovo accordo stato regioni 2025 parte base generale haccp prima seconda Datori di Lavoro con compiti di RSPP (DL SPP) Corsi DLSPP gratuiti gratis crediti formazione preventivo impresa edile agricola F - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "02/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxOUGF5ZVlmQUNfcFdKcVpwZnllZnM0TmNEYXlrTWJ6Z0JCM0tnd3VObjhSUGRqS09aZ0lSMlZFYjhHd2lQT2pmLTIxMkp2YzVEaE5uS0MwUWFoZW83dnhtR1BtRW4tQzZDVE9hZUg0YXF6cFcwbHBOQk96UlFld2pRWE9wM0U3dGpleUdCc2pHbnc4ejNNeTl2cXMtWW5yNlpheE1uczlRX29QYjdwSEJMX0xURkR4TG5FRnA4Q1U3YlFfX2NJTEhadW0taDVJemloS25mdWxXUEx6NURwSm5DdDlubEdLd2xwYU83WFJFYUhLcmMxMUlhMmFPdlRkQXU4V3ZUdmt3OWFvdjR3S2tMc3E0enh1Y3ZHWjkzRnlBb2dfYkcyRHYyRDlKdDRZWHR5YllubzZseHRTeDRNTXBjRF81eUpRZGZ3SFNZZGxvRTQ2aXoy?oc=5",
+      "descr": "",
+      "approvato": false
+    },
+    {
+      "id": "cafd63f54c",
+      "tipo": "evento",
+      "titolo": "Corso formatore aziendale D.Lgs. 81/08: prepararsi alle nuove disposizioni normative sulla sicurezza e sull'igiene sul lavoro Nuovo accordo stato regioni 2025 corso formatori videoconferenza fad aula virtualecorso lavoratori datore parte base generale Corsi - news.pmiservizi.it",
+      "fonte": "news.pmiservizi.it",
+      "data": "02/10/2026",
+      "link": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxOR3JGT1pXb3BOT0tNbzdRQ21QUHN2NWxvdTN5bXNzdWZmNXhMN3NaRWxSOHlkUGFoRHlvdzFLYVkweWtzTEc4ZW1valpCM1RQd3RCcUdUUGZqM2RxN3J2MC1ZdUpUZjNMTEgyQWJoV2xXVGh3RWNBSWVNZXZXc0Z5YlFGYnlWcS1ncGo3c1prX3lFWUhHcDJLWnVDbURzc2JZZkFGeUE2MXN5cjBMVlptdks1WmtUNWhZcFpfY2VISjBYRXozdkxaa19nclFYX0swaXJXR2xNa1ZjLWtEQ01qUHdXdVBrTm13TXlrQ3ItbjRiMm8xWktmUnFNTVd5OTBaZ2toZTFOZHZRWDVqMzBJSDJkR3JTQnJDSkVqR09SUW05U0VHbTg1YVNDTDhsNFJjWFVlSGpvMUQzVkZmYkR3bElnRV9vamtYRk9IYmNjVGxYdkU?oc=5",
       "descr": "",
       "approvato": false
     }
